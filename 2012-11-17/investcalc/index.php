@@ -1,10 +1,3 @@
-<?php 
-   $error_message = "";
-   $investment = "";
-   $interest_rate = "";
-   $years = "";
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +11,9 @@
     <?php if (!empty($error_message)) { ?>
         <p class="error"><?php echo $error_message; ?></p>
     <?php } // end if ?>
-    <form action="display_results.php" method="post">
+    
+    <!-- change the POST to a GET -->
+    <form action="display_results.php" method="get">   
 
         <div id="data">
             <label>Investment Amount:</label>
