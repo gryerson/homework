@@ -1,0 +1,9 @@
+Guitar Shop
+
+	In order for the site to work on our individual system, the 'dbname' 
+	variable in the databases.php file located in the model directory had 
+        to be set to the database name we chose for our
+	my_guitar_shop2 database.
+
+
+	
