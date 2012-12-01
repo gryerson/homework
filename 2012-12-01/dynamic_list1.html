@@ -17,8 +17,24 @@
     	  node.innerHTML = text;
     	  
     	  // Append new show at end of list
-    	  //var place = document.getElementById("8F18");
-    	  document.getElementById("theList").appendChild(node);
+    	  var place = document.getElementById("8F18");
+    	  document.getElementById("theList").insertBefore(node,place);
+    	  
+      } // end of addShow()
+      
+      function setColors()
+      {
+    	  // Get number of rows in array
+    	  var rows = document.getElementById("theList").getElementsByTagName("li");
+    	  
+    	  // Get color inputs from user in array
+    	  var colors = [color1.value, color2.value];
+    	  
+    	  // Color odd & even rows
+    	  for(var i=0; i<rows.length; i++)
+          {
+    		  rows[i].style.backgroundColor = colors[i % 2];
+          }
     	  
       }
    </script>
